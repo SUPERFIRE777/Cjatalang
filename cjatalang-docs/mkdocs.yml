@@ -1,0 +1,54 @@
+site_name: Ċatalaŋ Official Documentation
+site_description: ネコチャンの言語「Ċatalaŋ」の公式ドキュメントおよび文法書
+
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  font: false
+  palette:
+    primary: amber
+    accent: orange
+  features:
+    - content.footnote.tooltips
+
+plugins:
+  - search
+  - macros
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - md_in_html
+  - attr_list
+  - footnotes
+
+# カスタムCSSの登録
+extra_css:
+  - assets/stylesheets/custom.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - ホーム: index.md
+  - 資料:
+    - 概要: docs/index.md
+    - 文法:
+      - 概要: docs/grammar/index.md
+      - 文字と発音: docs/grammar/character.md
+      - 指定詞: docs/grammar/specifier.md
+    - 数学:
+      - 概要: docs/math/index.md
+      - 整数: docs/math/integer.md
+      - 小数: docs/math/decimal.md
+      - 分数: docs/math/fraction.md
+      - 複素数: docs/math/complex.md
+      - 演算: docs/math/operator.md
+      - 表現: docs/math/expression.md
+  - 表現集:
+    - RPGシーン: expr/rpg_scene.md

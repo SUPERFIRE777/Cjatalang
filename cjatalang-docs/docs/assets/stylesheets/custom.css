@@ -1,0 +1,33 @@
+:root {
+  /* 1. 本文フォントの定義 */
+  /* WindowsユーザーにはConsolas、MacにはMenlo、それ以外には等幅フォントを当てる */
+  --md-text-font: 'Consolas', 'Menlo', 'Monaco', 'Courier New', monospace;
+
+  /* 2. コードブロックも統一感を出すため同じスタックを適用 */
+  --md-code-font: 'Consolas', 'Menlo', 'Monaco', 'Courier New', monospace;
+}
+
+/* 3. t̰ の下部記号を隣の行と干渉させないための保護設定 */
+article {
+  line-height: 1.8;
+  /* 結合文字が隣の文字とくっつきすぎるのを防ぐ微調整 */
+  letter-spacing: 0.02em;
+  /* 結合文字の合成処理を強制的にオンにする */
+  font-feature-settings: "ccmp" 1;
+  font-variant-ligatures: contextual;
+}
+
+/* ルビ（ふりがな）の視認性向上 */
+rt {
+  font-size: 0.75em; /* ベース文字に対する相対サイズ。デフォルトは通常 0.5em ~ 0.6em 程度 */
+  font-weight: normal; /* ベース文字が太字の際、ルビまで太るのを防ぐ（お好みで） */
+  color: var(--md-default-fg-color--light); /* 少し文字色を薄くしてベーステキストと区別するのも美しい */
+  margin-bottom: -0.2em; /* spanで上に浮く分の調整 */
+}
+
+/* ルビのベーステキストを1つの強固な塊にする設定 */
+.ruby-base {
+  display: inline-block; /* これが魔法のスイッチだ。ベーステキストを1つの箱にする */
+  white-space: nowrap;   /* 箱の内部で改行されるのを絶対に許さない */
+  letter-spacing: normal !important; /* ブラウザによる自動調整を強制的に無効化する */
+}
