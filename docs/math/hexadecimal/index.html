@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../decimal/">
+        <link rel="prev" href="../operator/">
       
       
-        <link rel="next" href="../complex/">
+        <link rel="next" href="../expression/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>分数 - Ċatalaŋ Official Documentation</title>
+        <title>16進数 - Ċatalaŋ Official Documentation</title>
       
     
     
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              分数
+              16進数
             
           </span>
         </div>
@@ -568,17 +568,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../fraction/" class="md-nav__link">
         
   
   
@@ -594,7 +587,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -660,10 +652,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../hexadecimal/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -679,6 +678,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -842,14 +842,87 @@
 
 
 
-  <h1>分数</h1>
+  <h1>16進数</h1>
 
-<div class="admonition note">
-<p class="admonition-title">規則</p>
-<ul>
-<li>分数は(分子) ban (分母)で表す。</li>
-<li>つまり、(分子) ÷ (分母)。</li>
-</ul>
+<p>Ċatalaŋには16進数の桁を表すための数詞も存在します。</p>
+<p>16進数は<ruby><span class="ruby-base">don-dantētan</span><rt>16tētan</rt></ruby>と言います。</p>
+<p>ここで、16進数で使う数詞の一覧を載せておきます。</p>
+<div class="admonition abstract">
+<p class="admonition-title">16進数で使う数詞一覧</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">数詞</th>
+<th style="text-align: center;">16進数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">non</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: center;">tan</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;">tin</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr>
+<td style="text-align: center;">tun</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr>
+<td style="text-align: center;">ten</td>
+<td style="text-align: center;">4</td>
+</tr>
+<tr>
+<td style="text-align: center;">ton</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr>
+<td style="text-align: center;">dan</td>
+<td style="text-align: center;">6</td>
+</tr>
+<tr>
+<td style="text-align: center;">din</td>
+<td style="text-align: center;">7</td>
+</tr>
+<tr>
+<td style="text-align: center;">dun</td>
+<td style="text-align: center;">8</td>
+</tr>
+<tr>
+<td style="text-align: center;">den</td>
+<td style="text-align: center;">9</td>
+</tr>
+<tr>
+<td style="text-align: center;">don</td>
+<td style="text-align: center;">A</td>
+</tr>
+<tr>
+<td style="text-align: center;">gan</td>
+<td style="text-align: center;">B</td>
+</tr>
+<tr>
+<td style="text-align: center;">gin</td>
+<td style="text-align: center;">C</td>
+</tr>
+<tr>
+<td style="text-align: center;">gun</td>
+<td style="text-align: center;">D</td>
+</tr>
+<tr>
+<td style="text-align: center;">gen</td>
+<td style="text-align: center;">E</td>
+</tr>
+<tr>
+<td style="text-align: center;">gon</td>
+<td style="text-align: center;">F</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="admonition example">
 <p class="admonition-title">例</p>
@@ -857,33 +930,33 @@
 <thead>
 <tr>
 <th style="text-align: left;">Ċatalaŋ</th>
-<th style="text-align: left;">意味</th>
+<th style="text-align: left;">16進数</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><ruby><span class="ruby-base">tan</span><rt>1</rt></ruby> <ruby><span class="ruby-base">ban</span><rt>÷</rt></ruby> <ruby><span class="ruby-base">tin</span><rt>2</rt></ruby></td>
-<td style="text-align: left;"><span class="arithmatex">\(\frac{1}{2}\)</span></td>
+<td style="text-align: left;">dan-ten</td>
+<td style="text-align: left;">64</td>
 </tr>
 <tr>
-<td style="text-align: left;"><ruby><span class="ruby-base">tun</span><rt>3</rt></ruby> <ruby><span class="ruby-base">ban</span><rt>÷</rt></ruby> <ruby><span class="ruby-base">ten</span><rt>4</rt></ruby></td>
-<td style="text-align: left;"><span class="arithmatex">\(\frac{3}{4}\)</span></td>
+<td style="text-align: left;">tan-non-non</td>
+<td style="text-align: left;">100</td>
 </tr>
 <tr>
-<td style="text-align: left;"><ruby><span class="ruby-base">ton</span><rt>5</rt></ruby> <ruby><span class="ruby-base">ban</span><rt>÷</rt></ruby> <ruby><span class="ruby-base">dan</span><rt>6</rt></ruby></td>
-<td style="text-align: left;"><span class="arithmatex">\(\frac{5}{6}\)</span></td>
+<td style="text-align: left;">gin-don-gon-gen</td>
+<td style="text-align: left;">CAFE</td>
 </tr>
 <tr>
-<td style="text-align: left;"><ruby><span class="ruby-base">tin-tin</span><rt>22</rt></ruby> <ruby><span class="ruby-base">ban</span><rt>÷</rt></ruby> <ruby><span class="ruby-base">din</span><rt>7</rt></ruby></td>
-<td style="text-align: left;"><span class="arithmatex">\(\frac{22}{7}\)</span></td>
+<td style="text-align: left;">gan-don-gan-gen</td>
+<td style="text-align: left;">BABE</td>
 </tr>
 <tr>
-<td style="text-align: left;"><ruby><span class="ruby-base">tun-ton-ton</span><rt>355</rt></ruby> <ruby><span class="ruby-base">ban</span><rt>÷</rt></ruby> <ruby><span class="ruby-base">tan-tan-tun</span><rt>113</rt></ruby></td>
-<td style="text-align: left;"><span class="arithmatex">\(\frac{355}{113}\)</span></td>
+<td style="text-align: left;">gun-gen-don-gun</td>
+<td style="text-align: left;">DEAD</td>
 </tr>
 <tr>
-<td style="text-align: left;"><ruby><span class="ruby-base">tan</span><rt>1</rt></ruby> <ruby><span class="ruby-base">ban</span><rt>÷</rt></ruby> <ruby><span class="ruby-base">tan-tun-din</span><rt>137</rt></ruby></td>
-<td style="text-align: left;"><span class="arithmatex">\(\frac{1}{137}\)</span></td>
+<td style="text-align: left;">gan-gen-gen-gon</td>
+<td style="text-align: left;">BEEF</td>
 </tr>
 </tbody>
 </table>
