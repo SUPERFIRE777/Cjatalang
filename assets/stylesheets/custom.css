@@ -31,3 +31,10 @@ rt {
   white-space: nowrap;   /* 箱の内部で改行されるのを絶対に許さない */
   letter-spacing: normal !important; /* ブラウザによる自動調整を強制的に無効化する */
 }
+
+.qa-list {
+  display: grid;
+  grid-template-columns: 2em 1fr;
+  row-gap: 0.5em;
+  margin-bottom: 1em;
+}
