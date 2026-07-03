@@ -32,14 +32,11 @@ rt {
   letter-spacing: normal !important; /* ブラウザによる自動調整を強制的に無効化する */
 }
 
-.qa-list {
-  display: grid;
-  grid-template-columns: 2em 1fr;
-  row-gap: 0.5em;
-  margin-bottom: 1em;
+/* no-borderクラスが付与された表の装飾を消す */
+.no-border th, .no-border td {
+  border: none !important;
+  background-color: transparent !important;
 }
-
-/* Aの回答テキストの下に余白を設けて、次のQとの間隔を空ける */
-.qa-grid > div:nth-child(4n) {
-  margin-bottom: 2em;
+.no-border tr:hover {
+  background-color: transparent !important;
 }
