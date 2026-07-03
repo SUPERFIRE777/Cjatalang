@@ -35,6 +35,10 @@ rt {
 /* no-borderクラスが付与された表の装飾を消す */
 .no-border {
   border: none !important;
+}
+
+.no-border th, .no-border td {
+  border: none !important;
   background-color: transparent !important;
 }
 .no-border tr:hover {
