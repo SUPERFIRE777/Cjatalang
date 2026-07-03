@@ -50,8 +50,9 @@ rt {
   padding-right: 0 !important; 
 }
 
-.no-border th {
-  min-height: 0 !important;
+/* テーブルのヘッダーを非表示にし、上部の不要な空間を消去する */
+.no-border thead {
+  display: none;
 }
 
 /* 2列目の左側の余白でQ.とテキストの間隔を制御する */
