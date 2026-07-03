@@ -32,11 +32,14 @@ rt {
   letter-spacing: normal !important; /* ブラウザによる自動調整を強制的に無効化する */
 }
 
-/* no-borderクラスが付与された表の装飾を消す */
-.no-border {
+/* 表の外枠（境界線や影）を完全に消去する */
+.no-border table {
   border: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
 }
 
+/* no-borderクラスが付与された表の装飾を消す */
 .no-border th, .no-border td {
   border: none !important;
   background-color: transparent !important;
