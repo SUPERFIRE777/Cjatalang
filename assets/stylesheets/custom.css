@@ -46,5 +46,5 @@ rt {
 .no-border td {
   width: 1%;
   white-space: nowrap;
-  padding-right: 0.5em !important; /* 余白の大きさ。好みに応じて 0.5em 等に変更する */
+  padding: 1em 0.5em 1em 0em !important; /* 余白の大きさ。好みに応じて 0.5em 等に変更する */
 }
