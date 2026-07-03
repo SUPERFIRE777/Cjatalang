@@ -38,3 +38,8 @@ rt {
   row-gap: 0.5em;
   margin-bottom: 1em;
 }
+
+/* Aの回答テキストの下に余白を設けて、次のQとの間隔を空ける */
+.qa-grid > div:nth-child(4n) {
+  margin-bottom: 2em;
+}
