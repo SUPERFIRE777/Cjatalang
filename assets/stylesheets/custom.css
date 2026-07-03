@@ -45,6 +45,7 @@ rt {
 .no-border th:first-child,
 .no-border td:first-child {
   width: 1%;
+  min-width: 0 !important; /* テーマ側の制限を打ち消す */
   white-space: nowrap;
   padding-right: 0 !important; 
 }
