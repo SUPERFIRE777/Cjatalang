@@ -41,10 +41,16 @@ rt {
   background-color: transparent !important;
 }
 
-/* 1列目の幅を最小にし、右側の余白を調整する */
+/* 1列目の幅を最小化し、右側の余白をゼロにする */
 .no-border th:first-child,
 .no-border td:first-child {
   width: 1%;
   white-space: nowrap;
-  padding-right: 1em !important; /* 余白の大きさ。好みに応じて 0.5em 等に変更する */
+  padding-right: 0 !important; 
+}
+
+/* 2列目の左側の余白でQ.とテキストの間隔を制御する */
+.no-border th:nth-child(2),
+.no-border td:nth-child(2) {
+  padding-left: 0.5em !important; /* ここの数値で間隔を指定する */
 }
