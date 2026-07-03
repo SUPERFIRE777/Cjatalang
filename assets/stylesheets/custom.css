@@ -42,8 +42,9 @@ rt {
 }
 
 /* 1列目の幅を最小にし、右側の余白を調整する */
-.no-border th:first-child
+.no-border th:first-child,
 .no-border td:first-child {
-  max-width: 10%;
+  width: 1%;
   white-space: nowrap;
+  padding-right: 1em !important; /* 余白の大きさ。好みに応じて 0.5em 等に変更する */
 }
